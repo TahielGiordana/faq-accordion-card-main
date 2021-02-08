@@ -111,8 +111,8 @@ body{
 
     .illustration-box{
         position: absolute;
-        top: -10px;
-        left: -20px;
+        top: -40px;
+        left: 30px;
         transform: scale(.5);
     }
 
