@@ -4,7 +4,18 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     margin: 0%;
+}
+
+.illustration-box-container{
+    position: relative;
+    width: 60%;
+    min-width: min-content;
+    max-width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .card-container{
@@ -62,18 +73,7 @@ body{
 }
 
 .faq-container p{
-    display: none;
-    
-}
-
-.illustration-box-container{
-    position: relative;
-    width: 60%;
-    min-width: min-content;
-    max-width: 60%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    display: none;  
 }
 
 .illustration-box{
@@ -85,33 +85,75 @@ body{
 
 /*Mobile Design*/
 @media screen and (max-width: 768px){
+    .body{
+        background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin: 0%;
+    }
+
+    .illustration-box-container{
+        background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 300px;
+        padding-bottom: 20px;
+    }
+
+    .illustration-box{
+        position: absolute;
+        top: 30%;
+        left: 26%;
+        transform: scale(.5);
+    }
 
     .card-container{
+        background: #fff;
+        border-radius: 20px;
         display: inline;
-        padding: 50px;
+        color: hsl(238, 29%, 16%);
+        font-family: 'Kumbh Sans', sans-serif;
+        padding: 100px 20px 20px 20px;
+        min-width: min-content;
+        width: 50vw;
     }
 
     .faq-container{
         width: 100%;
     }
 
+    .faq-question h2{
+        font-size: 12px;
+        padding-right: 40px;
+        min-width: none;
+    }
+
+    .faq-question-title{
+        text-align: center;
+    }
+
     .image-container{
-        overflow: visible;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: red;
+        overflow: visible;
+        position: relative;
+        min-width: none;
     }
 
     .illustration-woman{
-        transform: translate(0,-75%);
-        position: relative;
+        position: absolute;
+        transform: scale(.5) translate(0, -250px);
         
-    }
-
-    .illustration-box-container{
-        height: 60%;
-        padding-top: 600px;
     }
 }
 
