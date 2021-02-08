@@ -83,4 +83,36 @@ body{
     left: -100px;
 }
 
+/*Mobile Design*/
+@media screen and (max-width: 768px){
+
+    .card-container{
+        display: inline;
+        padding: 50px;
+    }
+
+    .faq-container{
+        width: 100%;
+    }
+
+    .image-container{
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: red;
+    }
+
+    .illustration-woman{
+        transform: translate(0,-75%);
+        position: relative;
+        
+    }
+
+    .illustration-box-container{
+        height: 60%;
+        padding-top: 600px;
+    }
+}
+
 
