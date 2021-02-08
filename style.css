@@ -86,7 +86,6 @@ body{
 /*Mobile Design*/
 @media screen and (max-width: 768px){
     .body{
-        background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
         display: flex;
         align-items: center;
         justify-content: center;
